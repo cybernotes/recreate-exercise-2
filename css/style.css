@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #000;
+	padding-top: 50px;
+}
+.top-nav {
+	display: flex;
+	background: #000;
+	min-height: 50px;
+	overflow: hidden;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	justify-content: center;
+
+}
+
+.top-nav a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 5px solid #000;
+}
+
+.top-nav-list {
+	display: flex;
+	list-style: none;
+	 
+}
+
+.top-nav-list li {
+	margin: 0 25%;
+}
+
+.full-screen-bg {
+	height: calc(100vh - 150px);
+	width: 100%;
+	background-image: url("../images/solar-panels-1.jpeg");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	transition: background-image .5s;
+}
+.full.screen-bg h1 {
+	background: #000;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.col-2-1 {
+	width: 48%;
+	margin: 1%;
+	padding: 10px;
+	background: #fff;
+
+}
+
+.col-2-1 img {
+	display: block;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px solid #000;
+	border-radius: 25px;
+}
+
+
+.col-2-1 h2 {
+	text-align: center;
+	padding-bottom: 20px;
+} 
+
+.col-2-1 p {
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+}
+footer {
+	text-align: center;
+	background: #fff;
+}
+
+@media(max-width: 600px){
+	.top-nav {
+		display: block;
+	}
+	.flex-row{
+		flex-wrap: wrap;
+	}
+	.col-2-1 {
+		width: 98%;
+	}
+}
